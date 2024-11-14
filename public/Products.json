@@ -1,0 +1,210 @@
+[
+    {
+        "product_id": "1",
+        "product_title": "IPhone 13 mini",
+        "product_image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg",
+        "category": "phone",
+        "price": 99.99,
+        "description": "High-quality wireless earbuds with advanced noise-cancellation and 10-hour battery life.",
+        "specification": [
+            "Bluetooth 5.2",
+            "Active noise-cancelling",
+            "10 hours playback",
+            "Wireless charging case"
+        ],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": "2",
+        "product_title": "IPhone 13 Pro",
+        "product_image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg",
+        "category": "phone",
+        "price": 59.99,
+        "description": "Track fitness and sleep metrics with a stylish, waterproof design.",
+        "specification": [
+            "Heart rate monitor",
+            "Water-resistant up to 50m",
+            "Sleep tracking",
+            "7-day battery life"
+        ],
+        "availability": "Stock Out",
+        "rating": 4.5
+    },
+    {
+        "product_id": "3",
+        "product_title": "Watch With Camera",
+        "product_image": "https://i.ibb.co.com/2cLF1kN/watch3.jpg",
+        "category": "watch",
+        "price": 129.99,
+        "description": "Capture adventures in 4K resolution with built-in image stabilization and waterproof casing.",
+        "specification": [
+            "4K video recording",
+            "Image stabilization",
+            "Waterproof up to 30m",
+            "Wi-Fi enabled"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    },
+    {
+        "product_id": "4",
+        "product_title": "Portable Laptop Speaker Plus",
+        "product_image": "https://i.ibb.co.com/mShVKT5/l4s.jpg",
+        "category": "laptop",
+        "price": 59.99,
+        "description": "Waterproof Bluetooth speaker with rich bass and 12-hour battery life.",
+        "specification": [
+            "Bluetooth 5.0",
+            "Waterproof",
+            "12-hour battery life",
+            "Rich bass"
+        ],
+        "availability": "In Stock",
+        "rating": 4.5
+    },
+    {
+        "product_id": "5",
+        "product_title": "Smart Laptop Doorbell",
+        "product_image": "https://i.ibb.co.com/thSK2dJ/l3.jpg",
+        "category": "laptop",
+        "price": 129.99,
+        "description": "Smart doorbell with HD video, night vision, and two-way audio communication.",
+        "specification": [
+            "1080p HD video",
+            "Night vision",
+            "Two-way audio",
+            "Motion detection"
+        ],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": "6",
+        "product_title": "Samsung S22 Ultra",
+        "product_image": "https://i.ibb.co.com/fdVq1q9/m1.jpg",
+        "category": "phone",
+        "price": 199.99,
+        "description": "Stay connected and track health metrics with built-in ECG, GPS, and heart rate monitor.",
+        "specification": [
+            "ECG monitor",
+            "GPS tracking",
+            "Heart rate monitor",
+            "Water-resistant"
+        ],
+        "availability": "Stock Out",
+        "rating": 4.8
+    },
+    {
+        "product_id": "7",
+        "product_title": "New Dual Watch",
+        "product_image": "https://i.ibb.co.com/0Q1nP6B/watch1.jpg",
+        "category": "watch",
+        "price": 89.99,
+        "description": "Ultra HD webcam with superior low-light performance and built-in dual microphones.",
+        "specification": [
+            "4K resolution",
+            "Dual microphones",
+            "Auto-focus",
+            "USB connectivity"
+        ],
+        "availability": "Stock Out",
+        "rating": 4.7
+    },
+    {
+        "product_id": "8",
+        "product_title": "IPhone 12 Pro Max",
+        "product_image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max-.jpg",
+        "category": "phone",
+        "price": 69.99,
+        "description": "Digital assistant with voice control, smart home integration, and calendar sync.",
+        "specification": [
+            "Voice assistant",
+            "Smart home compatible",
+            "Calendar and reminders",
+            "Bluetooth and Wi-Fi"
+        ],
+        "availability": "In Stock",
+        "rating": 4.5
+    },
+    {
+        "product_id": "9",
+        "product_title": "HP Gaming Laptop",
+        "product_image": "https://i.ibb.co.com/48gcqHp/l5.jpg",
+        "category": "laptop",
+        "price": 199.99,
+        "description": "Compact and portable projector with 1080p resolution and HDMI connectivity.",
+        "specification": [
+            "1080p resolution",
+            "HDMI and USB",
+            "Built-in speaker",
+            "Compact design"
+        ],
+        "availability": "In Stock",
+        "rating": 4.6
+    },
+    {
+        "product_id": "10",
+        "product_title": "Premium Dell",
+        "product_image": "https://i.ibb.co.com/wCfS4Tp/l1.png",
+        "category": "laptop",
+        "price": 74.99,
+        "description": "Ergonomic wireless gaming mouse with customizable buttons and RGB lighting.",
+        "specification": [
+            "Wireless",
+            "RGB lighting",
+            "Adjustable DPI",
+            "Customizable buttons"
+        ],
+        "availability": "Stock Out",
+        "rating": 4.7
+    },
+    {
+        "product_id": "11",
+        "product_title": "Smart Assistant Watch",
+        "product_image": "https://i.ibb.co.com/4RnQgyJ/watch2.jpg",
+        "category": "watch",
+        "price": 79.99,
+        "description": "Voice-controlled smart speaker with high-quality sound and home automation capabilities.",
+        "specification": [
+            "Voice assistant",
+            "Wi-Fi and Bluetooth",
+            "360-degree sound",
+            "Smart home integration"
+        ],
+        "availability": "Stock Out",
+        "rating": 4.4
+    },
+    {
+        "product_id": "12",
+        "product_title": "IPhone 13 Pro Max",
+        "product_image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro-max.jpg",
+        "category": "phone",
+        "price": 149.99,
+        "description": "Premium over-ear headphones with superior noise cancellation and immersive sound.",
+        "specification": [
+            "Active noise-cancellation",
+            "Bluetooth 5.0",
+            "30-hour battery life",
+            "Comfortable fit"
+        ],
+        "availability": "In Stock",
+        "rating": 4.9
+    },
+    {
+        "product_id": "13",
+        "product_title": "Samsung Max Plus",
+        "product_image": "https://i.ibb.co.com/3Bdcgy4/samsung-galaxy-s21-fe-5g.jpg",
+        "category": "phone",
+        "price": 77.99,
+        "description": "Digital assistant with voice control, smart home integration, and calendar sync.",
+        "specification": [
+            "Voice assistant",
+            "Smart home compatible",
+            "Calendar and reminders",
+            "Bluetooth and Wi-Fi"
+        ],
+        "availability": "In Stock",
+        "rating": 7.5
+    }
+]
