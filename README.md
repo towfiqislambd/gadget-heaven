@@ -1,6 +1,6 @@
 # Gadget Heaven
 
-<b>1. Live Website Link: </b><span>https://cricket-players-platform.netlify.app</span><br>
+<b>1. Live Website Link: </b><span>https://various-nation.surge.sh</span><br>
 <h3>2. Required Document Links:</h3>
 <ol type="A">
 <li>React Routes: https://reactrouter.com/en/main</li>
