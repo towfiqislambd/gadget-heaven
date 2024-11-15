@@ -65,8 +65,7 @@ const Root = () => {
             setWishListProducts(newProducts)
             notify2()
             document.getElementById('heart').setAttribute('disabled', true)
-            document.getElementById('heart').classList.add('bg-gray-200')
-            document.getElementById('heart').classList.add('cursor-not-allowed')
+            document.getElementById('heart').className = 'p-2 border border-gray-300 rounded-full text-gray-400 cursor-not-allowed bg-gray-200'
         }
     }
 
