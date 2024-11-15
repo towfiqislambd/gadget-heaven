@@ -18,9 +18,9 @@ const Details = () => {
                 <h1 className="text-2xl font-bold leading-tight">Product Details</h1>
                 <p className="w-3/5 mx-auto text-gray-200">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
             </div>
-            <div className="grid grid-cols-3 gap-5 bg-slate-50 border p-5 rounded-xl w-[900px] mx-auto -translate-y-24 shadow">
-                <div className="p-5">
-                    <img src={product_image} className="w-full h-full" />
+            <div className="grid grid-cols-3 gap-5 bg-slate-50 border p-5 rounded-xl w-[900px] mx-auto -translate-y-24 shadow-lg">
+                <div className="flex items-center justify-center">
+                    <img src={product_image} className="w-2/3 h-2/3" />
                 </div>
                 <div className="col-span-2">
                     <h3 className="text-black font-semibold text-xl mb-1">{product_title}</h3>
@@ -34,7 +34,7 @@ const Details = () => {
                         }
                     </ol>
                     <p className="text-black font-semibold text-lg mb-1">Rating: </p>
-                    <div className="flex gap-10 mb-2 text-sm">
+                    <div className="flex gap-10 mb-2">
                         <div className="flex text-yellow-500">
                             <FaStar />
                             <FaStar />
@@ -45,7 +45,7 @@ const Details = () => {
                         <p className="">{rating}</p>
                     </div>
                     <div className="flex gap-3 items-center">
-                        <button onClick={() => handleAddToCart(detail)} className="flex items-center gap-2 w-36 justify-center  py-2 border bg-purple-600 rounded-full text-white border-purple-600 text-sm font-medium">Add To Cart <IoCartOutline className="text-xl" /></button>
+                        <button onClick={() => handleAddToCart(detail)} className="flex items-center gap-2 w-36 justify-center  py-2 border bg-purple-600 rounded-full text-white border-purple-600 text-sm font-medium ">Add To Cart <IoCartOutline className="text-xl" /></button>
                         <button id="heart" onClick={() => handleWishList(detail)} className="p-2 border border-gray-300 rounded-full"><IoMdHeartEmpty className="text-xl" /></button>
                     </div>
                 </div>

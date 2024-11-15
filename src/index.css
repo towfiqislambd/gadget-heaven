@@ -9,6 +9,5 @@ body {
 }
 
 nav a.active {
-    background-color: #9538e2 !important;
     color: #fff !important;
   }

@@ -4,6 +4,8 @@ import AddToCart from "./AddToCart";
 import WishList from "./WishList";
 import Img from "../assets/group.png"
 import { Link } from "react-router-dom";
+import { BsSortDown } from "react-icons/bs";
+
 
 const Dashboard = () => {
     const { resetCart, totalPrice, newProducts, wishListProducts, handleRemoveProduct, handleRemoveWishListProduct } = useContext(HandleContext);
@@ -44,11 +46,12 @@ const Dashboard = () => {
                 <button onClick={() => handleActiveBtn('wishlist')} className={` border border-white rounded-full py-2 px-8 font-medium me-3 ${activeBtn === 'wishlist' ? 'bg-white text-purple-600' : 'text-white'}`}>Wishlist</button>
             </div>
             <div className={`${activeBtn === 'wishlist' ? 'hidden' : 'block'}`}>
-                <div className="flex justify-between py-3 mx-20">
+                <div className="flex justify-between py-3 mx-32">
                     <h3 className="text-xl font-semibold">Cart</h3>
                     <div className="flex gap-3 items-center">
                         <h4 className="font-semibold">Total Cost: <span id="price">{totalPrice}</span></h4>
-                        <button onClick={sortedProducts} className="border border-purple-600 rounded-full py-2 px-4 font-medium text-sm text-purple-600">Sort By Price</button>
+                        <button onClick={sortedProducts} className="border border-purple-600 rounded-full py-2 px-4 font-medium text-sm text-purple-600 flex gap-2 items-center">Sort By Price <BsSortDown className="text-xl" />
+                        </button>
                         {
                             totalPrice === 0 || newProducts.length === 0 ?
                                 <button disabled className="hover:cursor-not-allowed border text-sm rounded-full py-2 px-4 font-medium text-gray-300 bg-purple-500" >Purchase</button> :
@@ -61,7 +64,7 @@ const Dashboard = () => {
                 }
             </div>
             <div className={`${activeBtn === 'wishlist' ? 'block' : 'hidden'}`}>
-                <h3 className="text-xl py-3 font-semibold mx-20">Wishlist</h3>
+                <h3 className="text-xl py-3 font-semibold mx-32">Wishlist</h3>
                 {
                     wishListProducts.map(product => <WishList handleRemoveWishListProduct={handleRemoveWishListProduct} key={product.product_id} product={product}></WishList>)
                 }

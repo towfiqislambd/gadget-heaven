@@ -7,7 +7,7 @@ const Product = ({ product }) => {
             <img src={product_image} className="mx-auto h-48 mb-3" />
             <h2 className="font-semibold text-lg mb-1">{product_title}</h2>
             <p className="text-gray-600 mb-3">Price: {price}</p>
-            <Link to={`/products/${product_id}`}  className="px-4 py-2 border bg-purple-600 rounded-full text-white border-purple-600 text-sm font-medium">View Details</Link>
+            <Link to={`/product-details/${product_id}`}  className="px-4 py-2 bg-purple-600 rounded-full text-white border-purple-600 text-sm font-medium hover:text-purple-600 hover:bg-transparent hover:font-semibold border-[2px] transition-all">View Details</Link>
         </div>
     )
 }

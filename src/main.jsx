@@ -8,6 +8,7 @@ import Statistics from './components/Statistics'
 import Dashboard from './components/Dashboard'
 import Details from './components/Details'
 import ErrorPage from './components/ErrorPage'
+import Offer from './components/Offer'
 
 
 
@@ -30,7 +31,11 @@ const router = createBrowserRouter([
         element: <Dashboard></Dashboard>
       },
       {
-        path: "/products/:product_id",
+        path: "/offer",
+        element: <Offer></Offer>
+      },
+      {
+        path: "/product-details/:product_id",
         loader: () => fetch('Products.json'),
         element: <Details></Details>
       },

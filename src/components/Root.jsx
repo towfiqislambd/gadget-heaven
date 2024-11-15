@@ -19,12 +19,15 @@ const Root = () => {
 
     const notify = () => toast.warning('Product Already Added', {
         autoClose: 2000,
+        position: "top-center"
     })
-    const notify1 = () => toast.success('Successfully Added To Cart', {
+    const notify1 = () => toast.success('Item Added To Cart', {
         autoClose: 2000,
+        position: "top-center"
     })
-    const notify2 = () => toast.success('Successfully Added To Wishlist', {
+    const notify2 = () => toast.success('Item Added To Wishlist', {
         autoClose: 2000,
+        position: "top-center"
     })
 
 

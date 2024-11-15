@@ -1,8 +1,22 @@
-# React + Vite
+# Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<b>1. Website Link: </b><span>https://cricket-players-platform.netlify.app</span><br>
+<h3>2. Document Links:</h3>
+<ol>
+<li>React Routes: https://reactrouter.com/en/main</li>
+<li>DaisyUI: https://daisyui.com/</li>
+</ol>
+<h3>3. List of React Fundamental concepts used in this project: </h3>
+<ol>
+<li>Components</li>
+<li>Props Drilling or passing props in multi-level</li>
+<li>useState, useEffect, useContext react hooks</li>
+<li>Event handler and state management</li>
+</ol>
+<h3>4. I have used (context API) for handling and managing data</h3>
+<h3>5. (5) key features of project/Project: </h3>
+<ul>
+<li><i>Fully Dynamic Website</i></li>
+<li><i>Eye Catching UI and UX</i></li>
+<li><i>Lightweight, Fast Loading and Organized Website</i></li>
+</ul>

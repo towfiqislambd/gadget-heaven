@@ -23,7 +23,8 @@ const Navbar = () => {
                     <ul className={`menu menu-horizontal px-1 font-medium ${location.pathname === '/' ? 'text-gray-100' : 'text-gray-700'}`}>
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/statistics">Statistics</NavLink></li>
-                        <li><NavLink to="dashboard">Dashboard</NavLink></li>
+                        <li><NavLink to="/dashboard">Dashboard</NavLink></li>
+                        <li><NavLink to="/offer">Offer</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end gap-4 items-center text-2xl">
