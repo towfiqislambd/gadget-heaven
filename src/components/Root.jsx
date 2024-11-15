@@ -20,7 +20,7 @@ const Root = () => {
         setNewProducts([]);
         setTotalPrice(0);
     }
-    const notify = () => toast.warning('Product Already Added', {
+    const notify = () => toast.warning('Item Already Added', {
         autoClose: 2000,
         position: "top-center"
     })
@@ -58,14 +58,15 @@ const Root = () => {
     }
     const handleWishList = product => {
         if (wishListProducts.includes(product)) {
-            document.getElementById('heart').setAttribute('disabled', true)
-            document.getElementById('heart').classList.add('bg-gray-200')
             return notify()
         }
         else {
             const newProducts = [...wishListProducts, product];
             setWishListProducts(newProducts)
             notify2()
+            document.getElementById('heart').setAttribute('disabled', true)
+            document.getElementById('heart').classList.add('bg-gray-200')
+            document.getElementById('heart').classList.add('cursor-not-allowed')
         }
     }
 
