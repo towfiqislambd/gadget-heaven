@@ -44,11 +44,11 @@ const Products = () => {
     return (
         <div className="mb-20 -mt-16">
             <h2 className="text-center font-semibold text-4xl pb-10 text-gray-800">Explore Cutting-Edge Gadgets</h2>
-            <div className="grid grid-cols-5 gap-7 items-start">
+            <div className="grid grid-cols-5 gap-4 xl:gap-7 items-start">
                 <div className="border rounded-lg flex flex-col gap-5 px-5 py-7">
                     <button onClick={() => handleAllCategory('all')} className={`hover:border-purple-600 px-4 py-3 border rounded-full text-sm font-medium border-purple-200 shadow ${activeCategory === 'all' ? 'bg-purple-600 text-white' : 'bg-slate-200'}`}>All Products</button>
                     <button onClick={() => handlePhoneCategory('phone')} className={`hover:border-purple-600 px-4 py-3 border rounded-full text-sm font-medium border-purple-200 shadow ${activeCategory === 'phone' ? 'bg-purple-600 text-white' : 'bg-slate-200'}`}>Phones</button>
-                    <button onClick={() => handleWatchCategory('watch')} className={`hover:border-purple-600 px-4 py-3 border rounded-full text-sm font-medium border-purple-200 shadow ${activeCategory === 'watch' ? 'bg-purple-600 text-white' : 'bg-slate-200'}`}>Smart Watches</button>
+                    <button onClick={() => handleWatchCategory('watch')} className={`hover:border-purple-600 px-3 py-3 border rounded-full text-sm font-medium border-purple-200 shadow ${activeCategory === 'watch' ? 'bg-purple-600 text-white' : 'bg-slate-200'}`}>Smart Watches</button>
                     <button onClick={() => handleLaptopCategory('laptop')} className={`hover:border-purple-600 px-4 py-3 border rounded-full text-sm font-medium border-purple-200 shadow ${activeCategory === 'laptop' ? 'bg-purple-600 text-white' : 'bg-slate-200'}`}>Laptops</button>
                     <button onClick={() => handleNoCategory('no')} className={`hover:border-purple-600 px-4 py-3 border rounded-full text-sm font-medium border-purple-200 shadow ${activeCategory === 'no' ? 'bg-purple-600 text-white' : 'bg-slate-200'}`}>Mac Book</button>
                 </div>

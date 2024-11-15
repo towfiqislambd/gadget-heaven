@@ -31,7 +31,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-4 items-center text-2xl">
-                    <Link to="/dashboard" className={`${location.pathname === '/' ? 'bg-gray-100 rounded-full p-2 text-lg' : ''}`}><IoCartOutline /></Link>
+                    <Link to="/dashboard" onClick={() => handleActiveBtn('cart')} className={`${location.pathname === '/' ? 'bg-gray-100 rounded-full p-2 text-lg' : ''}`}><IoCartOutline /></Link>
                     <Link to="/dashboard" onClick={() => handleActiveBtn('wishlist')} className={`${location.pathname === '/' ? 'bg-gray-100 rounded-full p-2 text-lg' : ''}`}><IoMdHeartEmpty /></Link>
                 </div>
             </div>

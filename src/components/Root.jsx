@@ -19,6 +19,7 @@ const Root = () => {
     const resetCart = () => {
         setNewProducts([]);
         setTotalPrice(0);
+        setPrice([])
     }
     const notify = () => toast.warning('Item Already Added', {
         autoClose: 2000,
@@ -43,7 +44,7 @@ const Root = () => {
         setWishListProducts(newProductArr)
     }
     const handleAddToCart = products => {
-        if (newProducts.includes(products)) {
+        if (newProducts.find(product => product.product_id === products.product_id)) {
             return notify()
         }
         else {
@@ -57,8 +58,8 @@ const Root = () => {
         }
     }
     const handleWishList = product => {
-        if (wishListProducts.includes(product)) {
-            return notify()
+        if (wishListProducts.find(wishlistProduct => wishlistProduct.product_id === product.product_id)) {
+            return notify() 
         }
         else {
             const newProducts = [...wishListProducts, product];
