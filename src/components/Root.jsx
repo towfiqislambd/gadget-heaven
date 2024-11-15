@@ -12,11 +12,14 @@ const Root = () => {
     const [price, setPrice] = useState([]);
     const [totalPrice, setTotalPrice] = useState(0);
 
+    const [activeBtn, setActiveBtn] = useState(null);
+    const handleActiveBtn = status => {
+        setActiveBtn(status)
+    }
     const resetCart = () => {
         setNewProducts([]);
         setTotalPrice(0);
     }
-
     const notify = () => toast.warning('Product Already Added', {
         autoClose: 2000,
         position: "top-center"
@@ -29,8 +32,6 @@ const Root = () => {
         autoClose: 2000,
         position: "top-center"
     })
-
-
     const handleRemoveProduct = (id, price) => {
         const newProductArray = newProducts.filter(product => product.product_id !== id);
         setNewProducts(newProductArray)
@@ -41,9 +42,6 @@ const Root = () => {
         const newProductArr = wishListProducts.filter(product => product.product_id !== id);
         setWishListProducts(newProductArr)
     }
-
-
-
     const handleAddToCart = products => {
         if (newProducts.includes(products)) {
             return notify()
@@ -58,10 +56,6 @@ const Root = () => {
             notify1()
         }
     }
-
-
-
-
     const handleWishList = product => {
         if (wishListProducts.includes(product)) {
             document.getElementById('heart').setAttribute('disabled', true)
@@ -78,9 +72,9 @@ const Root = () => {
     return (
         <div>
             <ToastContainer />
-            <Navbar></Navbar>
             <div>
-                <HandleContext.Provider value={{ resetCart, totalPrice, price, newProducts, wishListProducts, handleAddToCart, handleWishList, handleRemoveProduct, handleRemoveWishListProduct }}>
+                <HandleContext.Provider value={{ activeBtn, handleActiveBtn, resetCart, totalPrice, price, newProducts, wishListProducts, handleAddToCart, handleWishList, handleRemoveProduct, handleRemoveWishListProduct }}>
+                    <Navbar></Navbar>
                     <Outlet></Outlet>
                 </HandleContext.Provider>
             </div>

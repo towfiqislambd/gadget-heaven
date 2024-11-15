@@ -1,8 +1,13 @@
 import Banner from "./Banner";
 import Header from "./Header";
 import Products from "./Products";
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        document.title = 'Home | Gadget Heaven';
+    }, []);
+
     return (
         <div>
             <Header></Header>

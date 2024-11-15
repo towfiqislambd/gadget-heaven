@@ -5,6 +5,8 @@ import Product from "./Product";
 const Products = () => {
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
+    const [activeCategory, setActiveCategory] = useState(null);
+
     useEffect(() => {
         fetch('Products.json')
             .then(res => res.json())
@@ -15,13 +17,10 @@ const Products = () => {
 
     }, [])
 
-    const [activeCategory, setActiveCategory] = useState(null);
-
     const handleAllCategory = (status) => {
         setFilteredProducts(products);
         setActiveCategory(status)
     }
-
     const handlePhoneCategory = (status) => {
         const phones = products.filter(product => product.category === 'phone');
         setFilteredProducts(phones);
@@ -56,7 +55,7 @@ const Products = () => {
                 <div className="col-span-4 grid grid-cols-3 gap-6">
                     {
                         filteredProducts.length === 0 ? <h3 className="text-4xl font-semibold text-red-500">No Found Data!!!</h3> :
-                        filteredProducts.map(product => <Product key={product.product_id} product={product}></Product>)
+                            filteredProducts.map(product => <Product key={product.product_id} product={product}></Product>)
                     }
                 </div>
             </div>

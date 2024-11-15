@@ -1,4 +1,11 @@
+import { useEffect } from 'react';
+
 const Offer = () => {
+
+    useEffect(() => {
+        document.title = 'Offer | Gadget Heaven';
+    }, []);
+
     return (
         <div>
             <div className="bg-purple-600 text-center text-white py-10 space-y-5 mb-5">

@@ -12,7 +12,7 @@ const AddToCart = ({ product, handleRemoveProduct }) => {
                     <p className="text-gray-800 mb-3">Price: {price}</p>
                 </div>
             </div>
-            <button onClick={() => handleRemoveProduct(product_id,price)}><RxCrossCircled className="text-4xl text-red-500" /></button>
+            <button onClick={() => handleRemoveProduct(product_id, price)}><RxCrossCircled className="text-4xl text-red-500" /></button>
         </div>
     )
 }

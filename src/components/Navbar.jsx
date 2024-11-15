@@ -2,10 +2,13 @@ import { FaBars } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { useContext } from "react";
+import { HandleContext } from "./Root";
 
 const Navbar = () => {
+    const { handleActiveBtn } = useContext(HandleContext);
     const location = useLocation();
-    console.log(location)
+
     return (
         <nav className={`py-1 sticky top-0 z-10 ${location.pathname === '/' ? 'bg-purple-600' : 'bg-white shadow'}`}>
             <div className="navbar container mx-auto px-5">
@@ -29,7 +32,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end gap-4 items-center text-2xl">
                     <Link to="/dashboard" className={`${location.pathname === '/' ? 'bg-gray-100 rounded-full p-2 text-lg' : ''}`}><IoCartOutline /></Link>
-                    <Link to="/dashboard" className={`${location.pathname === '/' ? 'bg-gray-100 rounded-full p-2 text-lg' : ''}`}><IoMdHeartEmpty /></Link>
+                    <Link to="/dashboard" onClick={() => handleActiveBtn('wishlist')} className={`${location.pathname === '/' ? 'bg-gray-100 rounded-full p-2 text-lg' : ''}`}><IoMdHeartEmpty /></Link>
                 </div>
             </div>
         </nav>

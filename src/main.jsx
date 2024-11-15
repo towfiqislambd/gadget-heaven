@@ -10,8 +10,6 @@ import Details from './components/Details'
 import ErrorPage from './components/ErrorPage'
 import Offer from './components/Offer'
 
-
-
 const router = createBrowserRouter([
   {
     path: "/",

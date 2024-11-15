@@ -5,25 +5,24 @@ import WishList from "./WishList";
 import Img from "../assets/group.png"
 import { Link } from "react-router-dom";
 import { BsSortDown } from "react-icons/bs";
-
+import { useEffect } from 'react';
 
 const Dashboard = () => {
-    const { resetCart, totalPrice, newProducts, wishListProducts, handleRemoveProduct, handleRemoveWishListProduct } = useContext(HandleContext);
-    const [activeBtn, setActiveBtn] = useState(null);
-    const handleActiveBtn = status => {
-        setActiveBtn(status)
-    }
+
     const [sortedArr, setSortedArr] = useState([])
+    const { handleActiveBtn, activeBtn, resetCart, totalPrice, newProducts, wishListProducts, handleRemoveProduct, handleRemoveWishListProduct } = useContext(HandleContext);
+
+    useEffect(() => {
+        document.title = 'Dashboard | Gadget Heaven';
+    }, []);
     const sortedProducts = () => {
         const sortedArray = newProducts.sort((a, b) => Number(b.price) - Number(a.price));
         setSortedArr(sortedArray)
         console.log(sortedArr)
     }
 
-
     return (
         <div>
-
             <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box text-center">
                     <img src={Img} className="mx-auto mb-3" />
@@ -37,8 +36,6 @@ const Dashboard = () => {
                     </div>
                 </div>
             </dialog>
-
-
             <div className="bg-purple-600 text-center text-white py-10 space-y-5 mb-5">
                 <h1 className="text-2xl font-bold leading-tight">Dashboard</h1>
                 <p className="w-3/5 mx-auto text-gray-200">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>

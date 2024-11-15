@@ -2,7 +2,7 @@
 
 <b>1. Website Link: </b><span>https://cricket-players-platform.netlify.app</span><br>
 <h3>2. Required Document Links:</h3>
-<ol type="a">
+<ol type="A">
 <li>React Routes: https://reactrouter.com/en/main</li>
 <li>DaisyUI: https://daisyui.com/</li>
 </ol>

@@ -3,8 +3,9 @@ import { useContext } from "react";
 import { HandleContext } from "./Root";
 
 const WishList = ({ product, handleRemoveWishListProduct }) => {
-    const {product_id, product_title, product_image, price, description } = product;
+    const { product_id, product_title, product_image, price, description } = product;
     const { handleAddToCart } = useContext(HandleContext);
+
     return (
         <div className="border rounded-lg px-6 py-4 pr-10 flex justify-between items-center mx-32 mb-4">
             <div className="flex gap-5 items-center">
